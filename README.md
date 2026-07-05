@@ -21,15 +21,42 @@ Traditional predictive maintenance solutions often rely on centralized data coll
 
 SecurePdM-FL addresses these challenges by combining Federated Learning with Byzantine fault-tolerant mechanisms, enabling secure and scalable predictive maintenance across distributed industrial infrastructures.
 
-## ✨ Key Features
-- Privacy-preserving federated learning for predictive maintenance
-- Byzantine fault-tolerant aggregation mechanism
-- Robust anomaly detection using PCA-based techniques
-- Support for non-IID industrial datasets
-- Scalable deployment for Industry 4.0 environments
-- Reproducible experimental framework
+## ✨ Key Contributions
+- Three-tier federated architecture for predictive maintenance
+- Edge-based PCA anomaly screening
+- Dynamic game-theoretic reputation mechanism
+- Byzantine fault-tolerant model aggregation
+- Privacy-preserving secure aggregation
+- Robust operation under non-IID industrial environments
+- Remaining Useful Life (RUL) prediction framework
 
-🏗️ System Architecture
+## 🏗️ System Architecture
+
+Industrial Sensors
+        │
+        ▼
+ ┌─────────────────┐
+ │ Edge Layer      │
+ │ PCA Screening   │
+ └─────────────────┘
+        │
+        ▼
+ ┌─────────────────┐
+ │ Reputation Tier │
+ │ Trust Scoring   │
+ └─────────────────┘
+        │
+        ▼
+ ┌─────────────────┐
+ │ Secure FL Server│
+ │ SMPC / TEE      │
+ └─────────────────┘
+        │
+        ▼
+ ┌─────────────────┐
+ │ LSTM-AE Model   │
+ │ HI / RUL Output │
+ └─────────────────┘
 
 📂 Repository Structure
 
@@ -37,9 +64,25 @@ SecurePdM-FL addresses these challenges by combining Federated Learning with Byz
 
 🚀 Quick Start
 
-📊 Experimental Results
+## 📊 Experimental Results
 
-📄 Related Publication
+Key findings from the paper:
+
+- >89% classification accuracy maintained under up to 60% malicious clients.
+- Up to 76% reduction in worst-case RUL RMSE compared to unprotected federated baselines.
+- Less than 1% computational overhead introduced by edge PCA screening.
+- Only marginal convergence delay under adversarial conditions.
+
+## 📄 Future Work
+
+- Adaptive thresholding and concept drift handling
+- Explainable reputation diagnostics
+- Differential Privacy integration
+- FPGA/ASIC acceleration for secure aggregation
+- Large-scale industrial deployment
+- Digital twin validation
+- Reinforcement Learning for maintenance scheduling
+- Human-in-the-loop decision support
 
 📖 Citation
 
