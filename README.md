@@ -30,35 +30,85 @@ SecurePdM-FL addresses these challenges by combining Federated Learning with Byz
 - Robust operation under non-IID industrial environments
 - Remaining Useful Life (RUL) prediction framework
 
-## 🏗️ System Architecture
+## 🏗️ FedSecurePdM System Architecture
 
-Industrial Sensors
-        │
-        ▼
- ┌─────────────────┐
- │ Edge Layer      │
- │ PCA Screening   │
- └─────────────────┘
-        │
-        ▼
- ┌─────────────────┐
- │ Reputation Tier │
- │ Trust Scoring   │
- └─────────────────┘
-        │
-        ▼
- ┌─────────────────┐
- │ Secure FL Server│
- │ SMPC / TEE      │
- └─────────────────┘
-        │
-        ▼
- ┌─────────────────┐
- │ LSTM-AE Model   │
- │ HI / RUL Output │
- └─────────────────┘
+```mermaid
+flowchart TB
 
-📂 Repository Structure
+    A[Industrial IoT Environment<br/>Sensors • Machines • Edge Devices]
+
+    A --> B
+
+    subgraph L1["Edge Intelligence Layer"]
+        B[Local Data Collection]
+        C[PCA-Based Anomaly Detection]
+        D[Feature Extraction]
+        E[Local Model Training]
+        B --> C --> D --> E
+    end
+
+    E --> F
+
+    subgraph L2["Reputation Management Layer"]
+        F[Game-Theoretic Reputation Engine]
+        G[Client Trust Scoring]
+        H[Byzantine Client Detection]
+        I[Dynamic Weight Assignment]
+        F --> G --> H --> I
+    end
+
+    I --> J
+
+    subgraph L3["Secure Federated Aggregation Layer"]
+        J[Secure Aggregation]
+        K[SMPC / Trusted Execution Environment]
+        L[Privacy Preservation]
+        M[Global Model Update]
+        J --> K --> L --> M
+    end
+
+    M --> N
+
+    subgraph L4["Prognostics & Decision Layer"]
+        N[LSTM-Autoencoder]
+        O[Health Indicator Estimation]
+        P[Remaining Useful Life Prediction]
+        Q[Maintenance Decision Support]
+        N --> O --> P --> Q
+    end
+
+    Q --> R
+
+    subgraph L5["Industry 4.0 Outcomes"]
+        R[Reduced Downtime]
+        S[Improved Reliability]
+        T[Enhanced Security]
+        U[Privacy-Preserving Predictive Maintenance]
+        R --> S --> T --> U
+    end
+```
+
+### Architecture Components
+
+| Layer | Function | Technology |
+|---------|---------|---------|
+| Edge Intelligence | Local anomaly screening | PCA |
+| Reputation Layer | Trust management | Game Theory |
+| Aggregation Layer | Secure federated learning | SMPC / TEE |
+| Prognostics Layer | HI & RUL prediction | LSTM-Autoencoder |
+| Decision Layer | Maintenance recommendations | Predictive Analytics |
+
+### Key Innovations
+
+- Byzantine Fault-Tolerant Federated Learning
+- Dynamic Reputation-Based Aggregation
+- Edge-Level Anomaly Screening
+- Privacy-Preserving Model Aggregation
+- Health Indicator (HI) Estimation
+- Remaining Useful Life (RUL) Prediction
+- Industry 4.0 Deployment Readiness
+
+## 📂 Repository Structure
 
 ⚙️ Installation
 
