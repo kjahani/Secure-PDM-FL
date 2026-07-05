@@ -15,7 +15,19 @@ SecurePdM-FL is a research-oriented federated learning framework designed for pr
 
 By enabling collaborative learning without centralized data collection, SecurePdM-FL improves privacy, robustness, and scalability while maintaining high predictive performance under adversarial conditions.
 
-✨ Key Features
+## Research Motivation
+
+Traditional predictive maintenance solutions often rely on centralized data collection, introducing privacy risks, communication overhead, and vulnerability to malicious participants.
+
+SecurePdM-FL addresses these challenges by combining Federated Learning with Byzantine fault-tolerant mechanisms, enabling secure and scalable predictive maintenance across distributed industrial infrastructures.
+
+## ✨ Key Features
+- Privacy-preserving federated learning for predictive maintenance
+- Byzantine fault-tolerant aggregation mechanism
+- Robust anomaly detection using PCA-based techniques
+- Support for non-IID industrial datasets
+- Scalable deployment for Industry 4.0 environments
+- Reproducible experimental framework
 
 🏗️ System Architecture
 
