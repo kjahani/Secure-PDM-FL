@@ -1,0 +1,34 @@
+FedSecurePdM
+│
+├── configs
+│
+├── data
+│
+├── docs
+│
+├── experiments
+│
+├── notebooks
+│
+├── results
+│
+├── src
+│
+│   ├── data
+│   │   ├── nasa_loader.py
+│   │   ├── preprocessing.py
+│   │   ├── sequence_builder.py
+│
+│   ├── models
+│
+│   ├── federated
+│
+│   ├── reputation
+│
+│   ├── security
+│
+│   ├── prognostics
+│
+│   └── utils
+│
+└── tests
