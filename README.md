@@ -111,23 +111,40 @@ flowchart TB
 ## 📂 Repository Structure
 
 ```text
-FedSecurePdM/
-
-├── data/                 # Datasets
-├── docs/                 # Documentation
-├── experiments/          # Experimental setups
-├── figures/              # Figures and diagrams
-├── notebooks/            # Jupyter notebooks
-├── results/              # Experimental outputs
-├── src/
-│   ├── edge/
-│   ├── reputation/
-│   ├── aggregation/
-│   └── prognostics/
-├── README.md
-├── LICENSE
-├── requirements.txt
-└── CITATION.cff
+FedSecurePdM
+│
+├── configs
+│
+├── data
+│
+├── docs
+│
+├── experiments
+│
+├── notebooks
+│
+├── results
+│
+├── src
+│
+│   ├── data
+│   │   ├── nasa_loader.py
+│   │   ├── preprocessing.py
+│   │   ├── sequence_builder.py
+│
+│   ├── models
+│
+│   ├── federated
+│
+│   ├── reputation
+│
+│   ├── security
+│
+│   ├── prognostics
+│
+│   └── utils
+│
+└── tests
 ```
 
 ⚙️ Installation
